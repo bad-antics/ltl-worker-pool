@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_worker_pool
+
+import std::io
+use ltl_worker_pool as lib
+
+fn main() {
+    io::println("ltl_worker_pool demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
